@@ -78,4 +78,9 @@ WHERE emp_id IN  (
 SELECT emp_id, `name`
 FROM employees 
 WHERE emp_id IN (
-	SELECT department_emps.emp_id
+	SELECT title_emps.emp_id
+	FROM title_emps
+	WHERE (title_emps.title_code = 'T005'
+	     AND title_emps.end_at IS NULL)
+	)
+;	

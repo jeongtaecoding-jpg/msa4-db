@@ -156,7 +156,7 @@ VALUES(
 -- | auth_flg | `'1'` |
 -- | birthday | `2007-03-01` |
 
--- where 절에는 반드시 PK 로 해야 한다! (아무리 하나밖에들 없더라도 user_name 같은 걸로는 금지!!)
+-- where 절에는 반드시 PK 로 해야 한다! (아무리 값들 하나하나가 유일해도 user_name 같은 걸로는 금지!!)
 UPDATE users
 SET 
 	user_name = '테스터'
